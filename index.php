@@ -48,7 +48,7 @@ $parametro = $_GET['parametro'];
     <button type="submit">Invia</button>
 </form>
 
-<h1>La frase corretta senza <?php $parametro ?> e con GET è:</h1>
+<h1>La frase corretta senza <?php echo $parametro ?> e con GET è:</h1>
 <div>
         <?php
             echo str_ireplace($parametro, "###", $frase);
